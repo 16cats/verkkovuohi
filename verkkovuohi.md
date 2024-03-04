@@ -4,6 +4,8 @@ OWASP WebGoat installation for a Debian based virtual machine. Throughout this m
 
 
 ## The installation process
+
+### Java and Firewall
 We're going to install Java to run Java files first.
 ```
 $ sudo apt-get update
@@ -16,8 +18,10 @@ $ sudo apt-get install ufw
 $ sudo ufw enable
 ```
 
-![image](https://github.com/16cats/verkkovuohi/assets/97065659/4f2951ac-6a8c-43f6-90af-11079f34c5a2)
+![image](https://github.com/16cats/verkkovuohi/assets/97065659/729af5a4-296e-4ed5-bb8f-8911718ddddb)
 
+
+### WebGoat Jar
 According to the WebGoat GitHub, the newest version is `2023.8`, so I'll just edit the guide a bit to match the newest version. 
 
 ```
@@ -26,6 +30,8 @@ $ wget https://github.com/WebGoat/WebGoat/releases/download/v2023.8/webgoat-2023
 
 ![image](https://github.com/16cats/verkkovuohi/assets/97065659/250cd76a-adff-4853-8a1a-a16f6413540b)
 
+
+### Run it
 Alright, and the last step of installation.
 
 ```
@@ -39,18 +45,20 @@ Where
 
 *_"[WebWolf](https://owasp.org/www-project-webgoat/) is a separate web application which simulates an attackers machine. It makes it possible for us to make a clear distinction between what takes place on the attacked website and the actions you need to do as an “attacker”"._
 
+
+### Hello WebGoat
 It's telling us to browse to http://127.0.0.1:8080/WebGoat, so let's do that.
 
-![image](https://github.com/16cats/verkkovuohi/assets/97065659/141c0445-0dca-4c1f-96bf-dddf99ab75fd)
+![image](https://github.com/16cats/verkkovuohi/assets/97065659/f9f70065-2206-4682-8138-fe498c59c2f7)
 
 ![image](https://github.com/16cats/verkkovuohi/assets/97065659/abe8f3ad-9dd0-4f6b-80d6-bf8515eb635a)
 
 Et voilà.
 
-Although, as we can see, it's telling us to just go to port 8080 instead of 8888. I have my assumptions as to why, but if I ever find out why actually, I'll come edit this markdown.
+Although, as we can see, it's telling us to just go to port 8080 instead of 8888. I have my assumptions as to why, but if I ever find out why actually, I'll come back to edit this markdown.
 
 
 ### Sources
-* [Webgoat installation](https://terokarvinen.com/2023/webgoat-2023-4-ethical-web-hacking/)
-* [WebGoat Github](https://github.com/WebGoat/WebGoat/releases)
-* [Owasp Official Page](https://owasp.org/www-project-webgoat/)
+- [Webgoat installation](https://terokarvinen.com/2023/webgoat-2023-4-ethical-web-hacking/)
+- [WebGoat Github](https://github.com/WebGoat/WebGoat/releases)
+- [Owasp Official Page](https://owasp.org/www-project-webgoat/)
